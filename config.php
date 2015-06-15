@@ -3,11 +3,10 @@
 
 $app = " WRP ";
 $title_app = "Web Responsive Preview";
-$link_app = "http://localhost/previewer";
 
 # start edit here #
-$url = "http://localhost/";
-$download = "https://github.com/hscstudio/wrp";
+$link_preview = "http://localhost/";
+$download_preview = "https://github.com/hscstudio/wrp";
 # end edit here #
 
 $devices = [];
@@ -39,13 +38,13 @@ $devices['extra-small-device'] 	= [
 $links = [];
 $links[] 	= [
 	'id' => '',
-	'url'=> $download,
+	'link'=> $download_preview,
 	'icon'=>'fa fa-download fa-lg',
 	'title'=>'Download now',
 ];
 $links[] 	= [
 	'id' => 'remove-frame',
-	'url'=> $url,
+	'link'=> $link_preview,
 	'icon'=>'fa fa-times',
 	'title'=>'Remove frame',
 ];

@@ -76,7 +76,7 @@ require "config.php";
 <header>
     <nav class="frame" role="navigation">
         <div class="container-fluid">
-            <a href="#" class="brand">
+            <a href="index.php" class="brand">
                 <?= $app; ?>
                 <small class="text-muted hidden-xs"><?= $title_app; ?></small>
             </a>
@@ -89,7 +89,7 @@ require "config.php";
 				}
 				
 				foreach($links as $link){
-					echo "<a href='".$link['url']."' data-toggle='tooltip' data-placement='bottom' title='".$link['title']."' id='display-".$link['id']."'>";
+					echo "<a href='".$link['link']."' data-toggle='tooltip' data-placement='bottom' title='".$link['title']."' id='display-".$link['id']."'>";
 					echo "<i class='".$link['icon']."'></i>";
 					echo "</a>\n";
 				}
@@ -98,7 +98,7 @@ require "config.php";
         </div><!-- /.container -->
     </nav><!--/.navbar-->
 </header>
-<iframe src="<?= $url ?>" id="preview-iframe"></iframe>
+<iframe src="<?= $link_preview ?>" id="preview-iframe"></iframe>
 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -135,7 +135,7 @@ require "config.php";
 
         $("#remove-frame").click(function(e){
             e.preventDefault();
-            window.location.href = "<?= $url ?>";
+            window.location.href = "<?= $link_preview ?>";
         });
 
     });
