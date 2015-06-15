@@ -2,6 +2,9 @@
 Web Responsive Preview
 Inspired from https://almsaeedstudio.com/preview
 
+## Demos
+- http://www.wrp.hafidmukhlasin.com/
+
 ## Installation & Usage
 - Clone this repository https://github.com/hscstudio/wrp.git to your server
 ```

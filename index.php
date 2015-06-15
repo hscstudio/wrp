@@ -122,16 +122,16 @@ require "config.php";
             $("#preview-iframe").animate({width: width}, 500);
         }
 		
+	<?php
+	foreach($devices as $device){
+		?>	
+		$("#display-<?= $device['size'] ?>").click(function(e){
+			e.preventDefault();
+			iframe_width("<?= $device['size'] ?>px");
+		});
 		<?php
-		foreach($devices as $device){
-			?>	
-			$("#display-<?= $device['size'] ?>").click(function(e){
-				e.preventDefault();
-				iframe_width("<?= $device['size'] ?>px");
-			});
-			<?php
-		}
-		?>
+	}
+	?>
 
         $("#remove-frame").click(function(e){
             e.preventDefault();

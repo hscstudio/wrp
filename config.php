@@ -34,6 +34,12 @@ $devices['extra-small-device'] 	= [
 	'show'=>'',
 	'title'=>'phone 480',
 ];
+$devices['mini-device'] 	= [
+	'size'=>'320',
+	'icon'=>'fa fa-mobile',
+	'show'=>'',
+	'title'=>'phone 320',
+];
 
 $links = [];
 $links[] 	= [
